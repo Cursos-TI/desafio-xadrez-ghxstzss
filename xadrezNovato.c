@@ -7,14 +7,16 @@
 int main() {
 
 //DECLARAÇÃO DAS VARIÁVEIS
-    int bispo, rainha, torre, cavalo;
+
+    int bispo,rainha,torre,cavalo;
     int MovimentoCompleto = 1;
+
 //MOVIMENTANDO CADA PEÇA
 
 printf("BEM VINDO AO JOGO DE XADREZ!!!\n");
 
 for (bispo = 0; bispo < 5; bispo++){
-    printf("BISPO : Avante e Para Direita\n"); //imprime direção da peça bispo estrutura for
+    printf("BISPO: Avante e Para Direita\n"); //imprime direção da peça bispo estrutura for
 }
 printf("----------------------------------------------------------------------\n");
 
@@ -32,14 +34,17 @@ do
     torre++;
 } while (torre<5);
 
-while(MovimentoCompleto--)
-{
-    for(int i = 0; i < 2; i++){
-        printf("Cavalo: atras\n"); //imprime direção peça Cavalo loop aninhado
-    }
-    printf("Cavalo: esquerda\n"); //imprime direção peça Cavalo loop aninhado
-}
+printf("-----------------------------------------------------------------------\n");
 
+for(MovimentoCompleto--){
+
+    for(int i = 1; i <= 2; i++){
+        for(int j = 1; j <= 2; j++){
+            printf("Cavalo: Avante", cavalo);
+            
+    
+    
+        
 
 
 
